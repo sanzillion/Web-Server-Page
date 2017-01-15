@@ -1,0 +1,91 @@
+body{
+  /*background-image: url('../img/sasuke.jpg');*/
+  background-color: #ce3426;
+}
+.topmargin{
+  margin-top: 30px;
+}
+.padtop{
+  padding-top: 50px;
+}
+.ltopmargin{
+  margin-top: 20px;
+}
+.backred{
+  background-color: red;
+}
+.redtext{
+  color: white !important;
+  background: #ce3426 !important;
+  border: 1px solid white !important;
+}
+.container{
+  pdding: 0px 0px 0px 0px;
+}
+.whitetext{
+  color: white;
+}
+.alignright{
+  text-align: right;
+}
+.submargin{
+  margin-left: -10px;
+}
+.leftmargin{
+  padding-left: 10px;
+}
+button:hover{
+  color: #ce3426 !important;
+  background-color: yellow !important;
+}
+a:hover{
+  color: yellow !important;
+}
+
+input[type="checkbox"]{
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  bottom: -5px;
+}
+
+label.chkbx{
+  margin-top: 10px;
+}
+
+.hiden{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: solid 1px #ce3426;
+  top: 150px;
+  right: 100px;
+  background-color: #ce3426;
+}
+.hiden:hover{
+  border: solid 1px #ce3426;
+}
+table td{
+  padding: 5px 10px 5px 10px;
+}
+table th{
+  padding: 5px 10px 5px 10px;
+}
+table{
+  background-color: white;
+  border: solid 5px white;
+}
+.span{
+  height: 500px;
+}
+.col-md-8 p{
+  background-color: red;
+  color: white;
+  text-align: center;
+  width: 110px;
+  height: 30px;
+  border-radius: 3px;
+  border: 2px solid red;
+  padding: 5px 10px 5px 10px;
+}
