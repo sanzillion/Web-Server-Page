@@ -5,7 +5,7 @@ $visitors = getvisitors();
 
 if(isset($_POST['delete'])){
   $db = connect();
-	$sth = $db->prepare("DELETE FROM visitors");
+	$sth = $db->prepare("DELETE FROM visitor");
 	$sth->execute();
   header('Location: record');
 }
@@ -13,14 +13,14 @@ if(isset($_POST['delete'])){
 if(isset($_POST['search'])){
   $sdate = $_POST['search'];
   if(preg_match("/[a-zA-Z]/",$sdate)){
-    $styl = "<p>Invalid Date!</p>";
+    $styl = "<p class='spectext'>Invalid Date!</p>";
   }
   else{
     $sdatem = date('m', strtotime($sdate));
     $sdated = date('d', strtotime($sdate));
     $sdatey = date('Y', strtotime($sdate));
     if(!checkdate($sdatem, $sdated, $sdatey)){
-      $styl = "<p>Invalid Date!</p>";
+      $styl = "<p class='spectext'>Invalid Date!</p>";
     }
     else{
       $d = $_POST['search'];
@@ -54,8 +54,8 @@ if(isset($_POST['search'])){
   <body>
     <div class="container topmargin">
       <div class="row span">
-        <table class="table table-striped topmargin padtop" border="3">
-        <tr>
+        <table class="table table-striped padtop" border="3">
+        <tr style="">
           <th>ID</th>
           <th>Remote Addr</th>
           <th>HTTP Forwarded</th>
@@ -74,7 +74,8 @@ if(isset($_POST['search'])){
         </tr>
         <?php endforeach;?>
         </table>
-        <div class="row">
+        </div>
+        <div class="row ltopmargin">
           <div class="col-md-1">
             <form class="" action="record" method="post">
               <button class="btn btn-warning center-block"
@@ -94,7 +95,7 @@ if(isset($_POST['search'])){
           </div>
         </div>
 
-      </div>
+
     </div>
   </body>
 </html>

@@ -1,6 +1,4 @@
 <?php
-session_destroy();
-session_start();
 
 include "function.php";
 $db = connect();
@@ -35,8 +33,7 @@ $query->execute($execute_query);
     <meta name="viewport"
     content="width=device-width, initial-scale=1,
      maximum-scale=1, user-scalable=no">
-     <link rel="stylesheet" href="cs/bootstrap-3.3.7-dist/css/bootstrap.min.css">
-     <link rel="stylesheet" href="cs/bootstrap-3.3.7-dist/css/bootstrap.css">
+     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
      <link rel="stylesheet" href="cs/master.css">
     <title></title>
   </head>
